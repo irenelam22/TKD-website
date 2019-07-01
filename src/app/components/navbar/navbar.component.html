@@ -1,0 +1,7 @@
+<mat-toolbar>
+    Dartmouth Taekwondo
+    <span class="example-spacer"></span>
+    <div *ngFor="let route of routes">
+        <button mat-stroked-button routerLink={{route.link}}>{{ route.title }}</button>&nbsp;&nbsp;
+    </div>
+</mat-toolbar>
