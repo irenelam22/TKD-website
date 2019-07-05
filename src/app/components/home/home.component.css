@@ -1,81 +1,51 @@
-header {
-    align-items: center;
-    display: flex;
-    font-size: 18px;
-    height: 100vh;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    transform-style: preserve-3d;
-    perspective: 100px;
-  }
+body {
+  background-color: black;
+}
   
-  header:before {
-    animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
-                url(https://www.facebook.com/Dartmouth.TKD/photos/pb.557698534347606.-2207520000.1561612357./2134513749999402/?type=3&theater) no-repeat bottom;
-    background-size: cover;
-    content: "";
-    opacity: 0;
-    position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    z-index: -1;
-  }
-  
-  header:after {
-    animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: #F9FCFF;
-    content: "";
-    height: 40rem;
-    left: -5%;
-    position: absolute;
-      right: -5%;
-      top: 90%;
-    transform-origin: 0 0;
-    z-index: 1;
-  }
-  
-  .header-title {
-    color:#D347EF;
-  }
-  
-  .header-button {
-    transform: translateZ(.1px);
-    position: relative;
-    z-index: 10;
-  }
-  
-  .animate-pop-in {
-    animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
-    opacity: 0;
-    max-width:100%;
-    height:auto;
-  }
-  
-  .rocky-dashed {
-    animation-delay: .6s;
-    max-width:100%;
-    height:auto;
-  }
-  
-  .header-title {
-    animation-delay: .8s;
-  }
-  
-  .header-subtitle {
-    animation-delay: 1s;
-  }
-  
-  .header-button {
-    animation-delay: 1.1s;
-  }
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+  max-width:100%;
+  height:auto;
+}
 
-  
-  
+.rocky-dashed {
+  animation-delay: .6s;
+  max-width:100%;
+  height:auto;
+  object-fit: cover;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container .button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color:  #009933;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.larger {
+  font-size: 35px;
+  white-space: nowrap;
+  top: 40%;
+}
+
+.smaller {
+  font-size: 25px;
+  top: 50%;
+}
+
+
   /* Animations */
   
   @keyframes fade-slide-down {
