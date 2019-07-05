@@ -6,3 +6,9 @@ p {
     margin-right: 80px;
     margin-left: 80px;
 }
+
+img {
+    max-width: 85%;
+    height: auto;
+    
+}
