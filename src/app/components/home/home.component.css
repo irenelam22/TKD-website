@@ -1,7 +1,4 @@
-body {
-  background-color: black;
-}
-  
+
 .animate-pop-in {
   animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
   opacity: 0;

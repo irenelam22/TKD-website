@@ -1,6 +1,21 @@
+table, th, td {
+    border: 1px solid black;
+}
+th {
+    text-align: center;
+    font-size: 30px;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    
+}
 h1 {
     text-align: center;
 }
-h3 {
-    text-align: center;
-}
+
