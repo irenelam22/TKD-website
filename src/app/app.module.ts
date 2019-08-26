@@ -12,6 +12,7 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ContactComponent } from './components/contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

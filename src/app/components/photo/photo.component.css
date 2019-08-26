@@ -1,0 +1,22 @@
+.center {
+    text-align: center;
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+}
+
+img {
+    border-radius: 35px;
+    width:100%;
+    height: auto;
+    transition:transform 0.25s ease;
+  }
+
+img:hover {
+    opacity: 0.8;
+    transform:scale(2);
+    width: 100%;
+    border-radius: 40px;
+}
